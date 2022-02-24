@@ -1,0 +1,97 @@
+.headerContainer {
+  background: no-repeat center / cover url(../assets/images/mainBackground.jpg);
+  height: 250px;
+  max-width: 1024px;
+  .navContainer {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    ul {
+      display: flex;
+      flex-flow: row nowrap;
+      margin: 15px 15px;
+      li {
+        margin: 0px 15px;
+      }
+    }
+  }
+  .logo {
+    position: absolute;
+    height: 150px;
+    top: 40px;
+    left: 412px;
+  }
+}
+
+.mainContainer {
+  display: flex;
+  max-width: 1024px;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+  section {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    // border-bottom: red solid 5px;
+    article {
+      height: 150px;
+      display: flex;
+      flex-flow: column;
+      margin: 15px 15px;
+      cursor: pointer;
+      h2 {
+        font-size: 2.5rem;
+        margin-bottom: 35px;
+      }
+      div {
+        display: flex;
+        flex-flow: column;
+        font-size: 1.2rem;
+        color: red;
+        width: fit-content;
+
+        span {
+          display: flex;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    article:first-child:hover {
+      background: no-repeat center url(../assets/images/divBackground_1.jpg);
+    }
+    article:nth-child(2):hover {
+      background: no-repeat center url(../assets/images/divBackground_2.jpg);
+    }
+    article:nth-child(3):hover {
+      background: no-repeat center url(../assets/images/divBackground_3.jpg);
+    }
+    article:nth-child(4):hover {
+      background: no-repeat center url(../assets/images/divBackground_4.jpg);
+    }
+  }
+}
+.hiddArticle {
+  position: absolute;
+  background-color: red;
+  border-radius: 10px;
+  height: 400px;
+  width: 650px;
+  top: 20%;
+  left: 15%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  background: no-repeat center url(../assets/images/divBackground_6.jpg);
+}
+
+@media (max-width: 700px) {
+  .mainContainer {
+    section {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
