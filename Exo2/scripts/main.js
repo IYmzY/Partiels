@@ -19,9 +19,12 @@ const displayNamesPut = () => {
 
 const getRandom = () => {
     const randomName = ploufPloufNames[Math.floor(Math.random() * ploufPloufNames.length)];
-    displayedRandomName = document.querySelector('.displayedRandomName')
-    displayedRandomName.innerHTML = `<span class="randomName">${randomName}<span>`
-
+    document.querySelector(".randomContainer").style.background = "#fe2726"
+    setTimeout(() => {
+        document.querySelector(".randomContainer").style.background = "#FFFFFF"
+        displayedRandomName = document.querySelector('.displayedRandomName')
+        displayedRandomName.innerHTML = `<span class="randomName">${randomName}<span>`
+    }, 500);
     return
 }
 
