@@ -1,0 +1,26 @@
+.headerContainer {
+  background: no-repeat center / cover url(../assets/images/navBackground.jpg);
+  height: 250px;
+  .navContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      display: flex;
+      color: rgba(68, 223, 254, 1);
+      margin: 100px;
+      font-size: 5rem;
+    }
+  }
+}
+.nameItem {
+  color: red;
+  margin-right: 10px;
+}
+.buttonRandom {
+  margin-top: 100px;
+}
+.randomName {
+  color: red;
+}
